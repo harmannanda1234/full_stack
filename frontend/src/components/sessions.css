@@ -1,0 +1,28 @@
+.session-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .session-item {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    background-color: #f9f9f9;
+  }
+  
+  .session-item:hover {
+    background-color: #e8f0fe;
+    cursor: pointer;
+  }
+  
+  .view-all-btn {
+    padding: 0.5rem 1rem;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  

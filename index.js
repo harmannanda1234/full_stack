@@ -5,7 +5,13 @@ const sessionRoutes = require('./routes/session');  // Import session routes
 const arouter = require('./routes/auth');
 const verifyToken = require('./protected');
 const app = express();
-
+const cors = require('cors');
+app.use(cors({
+  origin: 'http://localhost:3000',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'], 
+  credentials: true,
+}));
 // Middleware to parse incoming JSON
 app.use(express.json());
 
